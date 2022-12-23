@@ -4,18 +4,18 @@ function generateSocials(dataJSON) {
       const element = dataJSON[key];
 
       const socialAnchor = document.createElement("a");
-      socialAnchor.classList.add("social-link");
+      socialAnchor.classList.add("soc-link");
       socialAnchor.href = element.url;
       socialAnchor.target = "_blank";
 
       const socialLabel = document.createElement("div");
-      socialLabel.classList.add("social-label");
+      socialLabel.classList.add("soc-label");
       socialLabel.innerHTML = `<span>${element.label}</span>`;
 
       socialAnchor.appendChild(socialLabel);
 
       const socialIcon = document.createElement("i");
-      socialIcon.classList.add("social-icon");
+      socialIcon.classList.add("soc-icon");
 
       element.icon.split(" ").forEach((iconClass) => {
         socialIcon.classList.add(iconClass);
@@ -24,7 +24,7 @@ function generateSocials(dataJSON) {
       socialLabel.appendChild(socialIcon);
 
       // Append new social anchor to container
-      document.querySelector("#socials").appendChild(socialAnchor);
+      document.querySelector("#soc").appendChild(socialAnchor);
     }
   }
 }
