@@ -1,5 +1,10 @@
 [
   {
+    "label": "Portfolio",
+    "icon": "fa-solid fa-icons",
+    "url": "https://jacob.day"
+  },
+  {
     "label": "Twitter",
     "icon": "fa-brands fa-twitter",
     "url": "https://twitter.com/_jacobmday"
@@ -14,6 +19,7 @@
     "icon": "fa-brands fa-github",
     "url": "https://github.com/jacobday"
   },
+
   {
     "label": "Email",
     "icon": "fa-solid fa-envelope",
