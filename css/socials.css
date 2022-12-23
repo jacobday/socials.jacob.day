@@ -113,7 +113,8 @@ body {
   transition: var(--transition);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:active {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
