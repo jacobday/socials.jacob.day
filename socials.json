@@ -1,0 +1,22 @@
+[
+  {
+    "label": "Twitter",
+    "icon": "fa-brands fa-twitter",
+    "url": "https://twitter.com/_jacobmday"
+  },
+  {
+    "label": "LinkedIn",
+    "icon": "fa-brands fa-linkedin-in",
+    "url": "https://www.linkedin.com/in/dayjacobm"
+  },
+  {
+    "label": "Github",
+    "icon": "fa-brands fa-github",
+    "url": "https://github.com/jacobday"
+  },
+  {
+    "label": "Email",
+    "icon": "fa-solid fa-envelope",
+    "url": "mailto:jacob@jacob.day"
+  }
+]

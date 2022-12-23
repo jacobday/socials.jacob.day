@@ -1,0 +1,173 @@
+:root {
+  /* Brand Fonts */
+  --brand-serif: serif;
+  --brand-sans-serif: "Inter", sans-serif;
+
+  /* Global Border Styling */
+  --radius-outer: 15px;
+  --radius-inner: 7.5px;
+  --radius-button: 50px;
+
+  /* Colors */
+  --color-primary: #4a9dce;
+  --color-outline: rgba(0, 0, 0, 0.169);
+
+  /* Misc. */
+  --transition: all 0.2s ease;
+}
+
+body {
+  background: linear-gradient(45deg, #ffd1fa 0%, #ccfdff 100%);
+}
+
+.container {
+  --spacing: 0.5em;
+
+  min-height: calc(100vh - (var(--spacing) * 2));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: var(--spacing);
+}
+
+.card {
+  width: 100%;
+  max-width: 450px;
+
+  background-color: #fff;
+
+  border-radius: var(--radius-outer);
+  box-shadow: 0 23px 26px 0 rgba(0, 0, 0, 0.1);
+
+  overflow: hidden;
+}
+
+.profile-container {
+  color: white;
+  font-family: var(--brand-sans-serif);
+
+  background-image: url(data:image/svg+xml;charset=utf8,%3Csvg%20viewBox%3D%220%200%20512%20512%22%20width%3D%22512%22%20height%3D%22512%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%20%3Cfilter%20id%3D%22noise%22%3E%20%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%220.875%22%20result%3D%22noise%22%20%2F%3E%20%3CfeColorMatrix%20type%3D%22matrix%22%20values%3D%220.2890625%200%200%200%200%200%200.125%200%200%200%200%200%200.125%200%200%200%200%200%200.52734375%200%22%20%2F%3E%20%3C%2Ffilter%3E%20%3Crect%20filter%3D%22url%28%23noise%29%22%20x%3D%220%22%20y%3D%220%22%20width%3D%22512%22%20height%3D%22512%22%20fill%3D%22transparent%22%20opacity%3D%221%22%20%2F%3E%3C%2Fsvg%3E),
+    linear-gradient(45deg, #7dbee3 0%, #ffa082 100%);
+  background-size: 512px cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 3em 0.8em;
+}
+
+.profile-container img {
+  height: 150px;
+  aspect-ratio: 1;
+
+  object-fit: cover;
+  object-position: center 45%;
+
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.profile-container .name {
+  font-size: 3.2em;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.profile-container .title {
+  font-weight: 300;
+}
+
+.social-container {
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  padding: 2em;
+  margin-top: 1em;
+}
+
+.social-link {
+  width: 85%;
+
+  color: black;
+  font-family: var(--brand-sans-serif);
+  font-size: 1.4em;
+  font-weight: 500;
+
+  border: solid 1px var(--color-outline);
+  border-radius: var(--radius-button);
+
+  padding: 0.5em 1em;
+  margin: 0 auto;
+  text-decoration: none;
+
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.social-label {
+  color: inherit;
+  font-family: var(--brand-sans-serif);
+
+  font-size: 0.65em;
+  font-weight: 600;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.social-label > span {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  font-size: 1.3em;
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .social-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .social-link {
+    width: 70%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
