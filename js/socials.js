@@ -4,18 +4,18 @@ function generateSocials(dataJSON) {
       const element = dataJSON[key];
 
       const socialAnchor = document.createElement("a");
-      socialAnchor.classList.add("soc-link");
+      socialAnchor.classList.add("link");
       socialAnchor.href = element.url;
       socialAnchor.target = "_blank";
 
       const socialLabel = document.createElement("div");
-      socialLabel.classList.add("soc-label");
+      socialLabel.classList.add("label");
       socialLabel.innerHTML = `<span>${element.label}</span>`;
 
       socialAnchor.appendChild(socialLabel);
 
       const socialIcon = document.createElement("i");
-      socialIcon.classList.add("soc-icon");
+      socialIcon.classList.add("icon");
 
       element.icon.split(" ").forEach((iconClass) => {
         socialIcon.classList.add(iconClass);

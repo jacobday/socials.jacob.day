@@ -91,7 +91,7 @@ body {
   margin-top: 1em;
 }
 
-.soc-link {
+.soc-container .link {
   width: 85%;
 
   color: black;
@@ -109,13 +109,13 @@ body {
   transition: var(--transition);
 }
 
-.soc-link:hover,
-.soc-link:active {
+.soc-container .link:hover,
+.soc-container .link:active {
   color: var(--color-primary);
   border-color: var(--color-primary);
 }
 
-.soc-label {
+.soc-container .label {
   color: inherit;
   font-family: var(--global-sans-serif);
 
@@ -129,12 +129,12 @@ body {
   position: relative;
 }
 
-.soc-label > span {
+.soc-container .label > span {
   display: flex;
   align-items: center;
 }
 
-.soc-icon {
+.soc-container .icon {
   font-size: 1.3em;
 
   position: absolute;
@@ -156,7 +156,7 @@ body {
     gap: 1em;
   }
 
-  .soc-link {
+  .soc-container .link {
     width: 70%;
   }
 }
