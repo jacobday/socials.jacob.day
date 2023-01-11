@@ -5,6 +5,11 @@
     "url": "https://jacob.day"
   },
   {
+    "label": "IDS Projects",
+    "icon": "fa-solid fa-code",
+    "url": "https://www.idsnews.com/staff/Jacob-Day"
+  },
+  {
     "label": "Twitter",
     "icon": "fa-brands fa-twitter",
     "url": "https://twitter.com/_jacobmday"
@@ -19,7 +24,6 @@
     "icon": "fa-brands fa-github",
     "url": "https://github.com/jacobday"
   },
-
   {
     "label": "Email",
     "icon": "fa-solid fa-envelope",
